@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TestTableViewCell" rowHeight="167" id="KGk-i7-Jjw" customClass="TestTableViewCell" customModule="TableViewDenemesi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="167"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTU-Oe-7tS">
+                        <rect key="frame" x="0.0" y="0.0" width="327" height="167"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cke-EM-oug">
+                                <rect key="frame" x="8" y="8" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="h6A-B7-4re"/>
+                                    <constraint firstAttribute="width" constant="150" id="ukd-BM-uiZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="48v-gS-WrF">
+                                <rect key="frame" x="166" y="50" width="153" height="67"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="48v-gS-WrF" secondAttribute="trailing" constant="8" id="0GX-Mb-erk"/>
+                            <constraint firstItem="48v-gS-WrF" firstAttribute="top" secondItem="rTU-Oe-7tS" secondAttribute="top" constant="50" id="3ba-fU-D05"/>
+                            <constraint firstItem="cke-EM-oug" firstAttribute="leading" secondItem="rTU-Oe-7tS" secondAttribute="leading" constant="8" id="iO3-W1-8nh"/>
+                            <constraint firstItem="cke-EM-oug" firstAttribute="top" secondItem="rTU-Oe-7tS" secondAttribute="top" constant="8" id="obZ-Mr-m0J"/>
+                            <constraint firstAttribute="bottom" secondItem="48v-gS-WrF" secondAttribute="bottom" constant="50" id="odW-NI-LEs"/>
+                            <constraint firstItem="48v-gS-WrF" firstAttribute="leading" secondItem="cke-EM-oug" secondAttribute="trailing" constant="8" id="wpk-ad-TbR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rTU-Oe-7tS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="RdC-Rg-BoN"/>
+                    <constraint firstAttribute="trailing" secondItem="rTU-Oe-7tS" secondAttribute="trailing" id="bOW-NL-kPM"/>
+                    <constraint firstAttribute="bottom" secondItem="rTU-Oe-7tS" secondAttribute="bottom" id="wMh-Wh-GtN"/>
+                    <constraint firstItem="rTU-Oe-7tS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ytV-Ni-9QZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backView" destination="rTU-Oe-7tS" id="5au-2x-U2P"/>
+                <outlet property="imageRick" destination="cke-EM-oug" id="LOz-UO-kVv"/>
+                <outlet property="nameRick" destination="48v-gS-WrF" id="NC2-xJ-gaJ"/>
+            </connections>
+            <point key="canvasLocation" x="134.05797101449275" y="149.66517857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
