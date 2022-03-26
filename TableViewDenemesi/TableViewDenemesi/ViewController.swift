@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         denemeTableView.register(TestTableViewCell.nib(), forCellReuseIdentifier: TestTableViewCell.identifier)
+        print("ekremForkDenemesi")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
